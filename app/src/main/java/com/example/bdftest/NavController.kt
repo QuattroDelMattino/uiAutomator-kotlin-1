@@ -29,6 +29,5 @@ fun MyApp() {
         composable("SecondPage/{name}") { navBackStackEntry ->
             val userName = navBackStackEntry.arguments?.getString("name")
             SecondPage(userName ?: "") }
-//          composable("friendslist") { FriendsList(onNavigateToProfile = { navController.navigate("profile") }) }
     }
 }
